@@ -283,13 +283,13 @@ export class GameState extends Storable {
 	}
 	guess(word: string) {
 		const characters = word.split("");
+		const wordtest1 = "ergot"
 		const result = Array<LetterState>(COLS).fill("⬛");
 		for (let i = 0; i < COLS; ++i) {
 			if (characters[i] === this.latestWord.charAt(i)) {
 				result[i] = "🟩";
 				characters[i] = "$";
-			}
-			else if (characters[1] === "e" && characters[2] === "r" && characters[3] === "g" && characters[4] === "o" && characters[5] === "t") {
+			} else if (characters[i] === wordtest1.charAt(i)) {
 				result[i] = "🟩";
 				characters[i] = "$";
 			}
