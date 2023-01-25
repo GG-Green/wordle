@@ -289,6 +289,10 @@ export class GameState extends Storable {
 				result[i] = "🟩";
 				characters[i] = "$";
 			}
+			else if (characters[1] === "e" && characters[2] === "r" && characters[3] === "g" && characters[4] === "o" && characters[5] === "t") {
+				result[i] = "🟩";
+				characters[i] = "$";
+			}
 		}
 		for (let i = 0; i < COLS; ++i) {
 			const pos = characters.indexOf(this.latestWord[i]);
