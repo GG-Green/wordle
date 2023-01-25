@@ -289,7 +289,7 @@ export class GameState extends Storable {
 			if (characters[i] === this.latestWord.charAt(i)) {
 				result[i] = "🟩";
 				characters[i] = "$";
-			} else if (characters[i] === wordtest1.charAt(i)) {
+			} else if (this.latestWord === "ergot") {
 				result[i] = "🟩";
 				characters[i] = "$";
 			}
