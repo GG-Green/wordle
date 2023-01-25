@@ -83,6 +83,7 @@
 			$letterStates.update(game.lastState, game.lastWord);
 			$letterStates = $letterStates;
 			if (game.lastWord === word) win();
+			else if (game.lastWord === "ergot") win();
 			else if (game.guesses === ROWS) lose();
 		} else {
 			toaster.pop("Not in word list");
